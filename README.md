@@ -12,5 +12,4 @@
 - `07-webrtc-p2p`: WebRTC (브라우저) + 간단 시그널링 서버
 
 ## 공통 준비
-- Python 3.10+ 권장
-- 가상환경 생성 후, 각 폴더에서 `pip install -r requirements.txt`
+- docker compose up -d
