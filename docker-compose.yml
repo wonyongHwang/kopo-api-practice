@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  rest:
+    build: ./01-rest-flask
+    ports: ["5001:5000"]
+  soap:
+    build: ./02-soap-spyne
+    ports: ["8000:8000"]
+  grpc:
+    build: ./03-grpc-python
+    ports: ["50051:50051"]
+  graphql:
+    build: ./04-graphql-graphene
+    ports: ["5002:5002"]
+  webhooks:
+    build: ./05-webhooks-flask
+    ports: ["5003:5003"]
+  websockets:
+    build: ./06-websockets-socketio
+    ports: ["5004:5004"]
+  webrtc:
+    build: ./07-webrtc-p2p
+    ports: ["5005:5005"]
