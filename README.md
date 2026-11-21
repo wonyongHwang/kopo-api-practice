@@ -205,14 +205,10 @@ service TodoService {
 # macOS
 brew install grpcurl
 
-# Ubuntu/Debian: grpcurl은 배포판 저장소에 없을 수 있으므로
-# 공식 릴리스 바이너리 또는 Go 설치 환경에서 아래 방법 사용
-# go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
-# 이후 $(go env GOPATH)/bin을 PATH에 추가
 ```
 
 ```bash
-
+# Linux (Ubuntu)
 ARCH=$(dpkg --print-architecture)
 VER=1.9.4
 FILE="grpcurl_${VER}_linux_${ARCH}.deb"
